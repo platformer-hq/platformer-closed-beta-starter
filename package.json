@@ -1,0 +1,21 @@
+{
+  "name": "platformer-closed-beta-starter",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "typescript": "~5.7.2",
+    "vite": "^6.1.0",
+    "vite-plugin-mkcert": "^1.17.6"
+  },
+  "dependencies": {
+    "@telegram-apps/bridge": "^2.3.2",
+    "valibot": "1.0.0-rc.1"
+  }
+}
