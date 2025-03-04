@@ -1,4 +1,4 @@
-import { postEvent, retrieveRawInitData } from '@telegram-apps/bridge';
+import { postEvent, retrieveRawInitData, targetOrigin } from '@telegram-apps/bridge';
 import { date, looseObject, pipe, string, transform } from 'valibot';
 
 import { gqlRequest, type GqlRequestError } from './helpers/gqlRequest.ts';
@@ -21,6 +21,7 @@ function extractErrorMessage(error: GqlRequestError): string {
 }
 
 (async () => {
+  targetOrigin.set('https://platformer-hq.github.io');
   postEvent('web_app_ready');
 
   const title = document.getElementById('title')!;
